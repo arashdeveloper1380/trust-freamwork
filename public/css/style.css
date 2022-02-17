@@ -1,0 +1,206 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/IRANSansWeb.eot");
+  src: url("../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb.woff") format("woff"), url("../fonts/ttf/IRANSansWeb.ttf") format("truetype"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: IRANSans; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); }
+
+.btn {
+  border: none;
+  background: none;
+  letter-spacing: -.3px;
+  outline: none;
+  transition: .2s; }
+
+.btn-yellow {
+  background: #ffde7d;
+  color: #555555;
+  padding: 3px 15px;
+  border-radius: 2px; }
+  .btn-yellow:hover {
+    background-color: #555555;
+    color: #ffffff; }
+
+/*------------------------------------------------------------------
+                           Header
+--------------------------------------------------------------------*/
+#header {
+  flex: 0 0 auto;
+  background: #00b8a9;
+  box-shadow: inset 0px 12px 0 #009f92; }
+  #header nav.navbar {
+    margin-top: 12px; }
+  #header nav ul.nav {
+    list-style: none; }
+    #header nav ul.nav li {
+      float: right;
+      padding: 15px; }
+  #header nav button {
+    margin-top: 10px; }
+  #header #title {
+    padding-bottom: 50px; }
+    #header #title h1 {
+      text-align: center;
+      color: #ffffff;
+      letter-spacing: -2px;
+      font-weight: 500;
+      margin-top: 80px;
+      font-size: 40px; }
+    #header #title p {
+      color: #ffffff;
+      font-size: 14px;
+      padding: 0 100px 30px;
+      text-align: center;
+      line-height: 27px; }
+    #header #title span {
+      text-align: center;
+      display: block; }
+      #header #title span a {
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 0px; }
+        #header #title span a:hover {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+
+/*------------------------------------------------------------------
+                           main-content
+--------------------------------------------------------------------*/
+#main-content {
+  flex: 1 0 auto; }
+
+.title-section {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  margin-top: 50px;
+  color: #555555;
+  letter-spacing: -1px; }
+
+.description-section {
+  display: block;
+  text-align: center;
+  padding: 20px 0px 55px;
+  color: #555555;
+  line-height: 27px;
+  font-size: 15px;
+  letter-spacing: -.3px; }
+
+a.note {
+  color: #707070;
+  cursor: pointer;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 0px;
+  transition: .2s; }
+  a.note:hover {
+    border-bottom: 1px solid black;
+    color: black; }
+
+.more {
+  margin-bottom: 40px !important; }
+  .more .continue, .more .send {
+    color: #555555;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 0px;
+    letter-spacing: -.4px;
+    transition: .2s; }
+    .more .continue:hover, .more .send:hover {
+      border-bottom: 1px solid black;
+      color: black; }
+  .more .dt {
+    display: block;
+    text-align: center; }
+  @media only screen and (max-width: 1200px) {
+    .more .dtl {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px; } }
+
+/*---------------------------- Story ------------------------------*/
+.story {
+  background: #ffffff; }
+  .story > .row {
+    margin: 10px; }
+  .story .storyBox {
+    border-right: solid 6px #f6416c;
+    margin-bottom: 40px;
+    transition: .2s; }
+    .story .storyBox:hover {
+      border-right: solid 6px #ffde7d; }
+    .story .storyBox h2 a {
+      color: #333;
+      padding: 5px 0;
+      font-size: 18px;
+      letter-spacing: -.4px;
+      font-weight: 400; }
+      .story .storyBox h2 a:hover {
+        text-decoration: underline; }
+    .story .storyBox p {
+      font-size: 13px;
+      padding: 5px 0;
+      line-height: 25px;
+      color: #878787; }
+
+/*---------------------------- Radio ------------------------------*/
+.radio {
+  background: #ffde7d; }
+  .radio > .row {
+    margin: 30px; }
+  .radio .radioBox > div.col-lg-11 {
+    padding-right: 0;
+    margin: 10px 0; }
+  .radio .radioBox h2 i {
+    font-size: 40px; }
+  .radio .radioBox h2 a {
+    color: #333;
+    padding: 5px 0;
+    font-size: 22px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    right: 4px; }
+  .radio .radioBox p {
+    font-size: 13px;
+    padding: 5px 0;
+    line-height: 25px;
+    color: #3c3c3c; }
+
+/*---------------------------- Video ------------------------------*/
+.video {
+  background: #707070; }
+  .video .title-section, .video .description-section {
+    color: #ffffff; }
+
+/*------------------------------------------------------------------
+                           Footer
+--------------------------------------------------------------------*/
+#footer {
+  flex: 0 0 auto;
+  background: #ffde7d; }
+  #footer .copyright {
+    display: block;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    letter-spacing: -.7px;
+    font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */
